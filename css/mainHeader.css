@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+#mainHeader {
+  position: fixed;
+  background-color: rgba(211, 211, 211, 0.7);
+  width: 100%;
+  z-index: 1;
+}
+.mainHeader-container {
+  padding: 0 200px;
+  height: 65px;
+}
+#home {display: inline-block;}
+span a {text-decoration: none;}
+#menu {display: inline-block; position: absolute; margin: 31px 0;}
+nav ul {font-size: 19px; font-family: 'Inconsolata', monospace; font-weight: 500; margin: 0; padding: 0 50px; list-style: none; display: flex;}
+nav ul li:not(:last-of-type)::after {content: "|"}	
+nav ul li a {text-decoration: none; color: #000; padding: 0 30px;}

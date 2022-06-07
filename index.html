@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>landing page</title>
+  <link rel="stylesheet" href="css/mainHeader.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400;500;600;700;800&family=Black+Han+Sans&family=Hi+Melody&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Pen+Script&family=Poor+Story&family=Press+Start+2P&family=Slabo+27px&display=swap" rel="stylesheet">
+  <style>
+  #sec {
+    padding: 120px 0;
+    text-align: center;
+  }
+  .what {
+    width: 500px;
+    height: 375px;
+    animation-name: whats;
+    animation-duration: 2.5s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+    margin: 0 auto;
+  }
+
+  @keyframes whats {
+    0% {left:0px; top:0px;background-image: url(./image/introduce.png);}
+    25% {left:0px; top:0px;background-image: url(./image/asmr.jpg);}
+    50% {left:0px; top:0px;background-image: url(./image/roadmap.png);}
+    75% {left:0px; top:0px;background-image: url(./image/joinus.jpg);}
+  }
+  .menu {
+    display: inline-block;
+    margin: 20px 14px;
+    position: relative;
+    animation: menu-ani 6s;
+    font: 22px 'Slabo 27px', serif;
+  }
+  
+  @keyframes menu-ani {
+    0% {
+        opacity: 0;
+        transform: translate3d(-50%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+  }
+  </style>
+</head>
+<body>
+  <div>
+    <header id="mainHeader">
+      <div class="mainHeader-container">
+        <span id ="home">
+          <a href="#">
+            <img src="./image/logo.png" style="height: 63px; border: 1px solid plum;">
+          </a>
+        </span>
+        <div id ="menu">
+          <nav>
+            <ul class="navi">
+              <li><a href="./introduce.html">Introduce</a></li>
+              <li><a href="./ASMR.html">ASMR</a></li>
+              <li><a href="./roadMap.html">Road map</a></li>
+              <li><a href="./joinUs.html">Join us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="sec">
+      <header id ="sectionHeader">
+        <div class="sectionHeader-Container">
+          <span style="font: 30px 'Poor Story', cursive; text-align: center;">
+            무엇이 궁금하신가요?
+          </span>
+          <br><br><br><br><br>
+          <div class="what">
+          </div>
+          <br>
+          <div class="menu">
+            Introduce
+          </div>
+          <div class="menu">
+            ASMR
+          </div>
+          <div class="menu">
+            Road map
+          </div>
+          <div class="menu">
+            Join us
+          </div>
+        </div>
+      </header>
+    </section>
+  </div>
+</body>
+</html>

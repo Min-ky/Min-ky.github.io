@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="../parkminji/js/joinUs.js"></script>
+  <title>Join us</title>
+  <link rel="stylesheet" href="css/mainHeader.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400;500;600;700;800&family=Black+Han+Sans&family=Hi+Melody&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Pen+Script&family=Poor+Story&family=Press+Start+2P&family=Slabo+27px&display=swap" rel="stylesheet">
+  <style>
+  form {
+    padding: 110px 0;
+  }
+  table {
+    margin: 0 auto;
+  }
+  th {
+    font-size: 2em;
+    padding: 0 0 40px 0;
+  }
+  td {
+    padding: 0 0 20px 15px;
+  }
+  .req {
+    color: red;
+  }
+  #tb-memberbook {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  #tb-memberbook th {
+    font-size: 16px;
+    border: 1px solid #000;
+    padding: 5px;
+  }
+  #tb-memberbook td {
+    font-size: 16px;
+    border: 1px solid #000;
+    padding: 5px;
+  }
+  </style>
+  <script>
+  window.onload = () => renderMemberInfo();
+  </script>
+</head>
+<body>
+  <div>
+    <header id="mainHeader">
+      <div class="mainHeader-container">
+        <span id ="home">
+          <a href="./index.html">
+            <img src="./image/logo.png" style="height: 63px; border: 1px solid plum;">
+          </a>
+        </span>
+        <div id ="menu">
+          <nav>
+            <ul class="navi">
+              <li><a href="./introduce.html">Introduce</a></li>
+              <li><a href="./ASMR.html">ASMR</a></li>
+              <li><a href="./roadMap.html">Road map</a></li>
+              <li><a href="./joinUs.html">Join us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </div>
+  <form action="javascript:saveMemberInfo();" name="memberFrm">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Join us</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ID
+            <span class="req">*</span>
+          </td>
+          <td>
+            <input type="text" name="userId" id="userId" placeholder="4~12자리, 영소문자·숫자 가능" style="width: 280px; height: 25px;";>
+          </td>
+        </tr>
+        <tr>
+          <td>PW
+            <span class="req">*</span>
+          </td>
+          <td>
+            <input type="password" name="password" id="password" placeholder="8~15자리, 숫자/영문자/특수문자(!@#$*_) 포함" style="width: 280px; height: 25px;";>
+          </td>
+        </tr>
+        <tr>
+          <td>PW 확인
+          </td>
+          <td>
+            <input type="password" name="pwCheck" id="pwCheck" style="width: 280px; height: 25px;";>
+          </td>
+        </tr>
+        <tr>
+          <td>이름
+            <span class="req">*</span>
+          </td>
+          <td>
+            <input type="text" name="userName" id="userName" placeholder="한글만 입력 가능" style="width: 280px; height: 25px;";>
+          </td>
+        </tr>
+        <tr>
+          <td>생년월일
+            <span class="req">*</span>
+          </td>
+          <td>
+            <input type="text" name="userBirth" id="userBirth" placeholder="6자리 (ex.990909)" style="width: 280px; height: 25px;";>
+          </td>
+        </tr>
+        <tr>
+          <td>이메일
+            <span class="req">*</span>
+          </td>
+          <td>
+            <input type="email" name="userEmail" id="userEmail" placeholder="이메일 형식으로 작성 (ex.aaa@aaa.com)" style="width: 280px; height: 25px;";>
+          </td>
+        </tr>
+        <tr>
+          <td>전화번호
+            <span class="req">*</span>
+          </td>
+          <td>
+            <input type="text" name="tel1" id="tel1" placeholder="010" style="width: 50px; height: 25px;";>
+            -
+            <input type="text" name="tel2" id="tel2" placeholder="3333" style="width: 50px; height: 25px;";>
+            -
+            <input type="text" name="tel3" id="tel3" placeholder="3333" style="width: 50px; height: 25px;";>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            <input type="submit" value="Join">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Cancel">
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br><br><br>
+    <hr>
+    <h2 style="text-align: center;">회원 목록</h2>
+    <table id="tb-memberbook">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>ID</th>
+          <th>PW</th>
+          <th>이름</th>
+          <th>생년월일</th>
+          <th>이메일</th>
+          <th>전화번호</th>
+          <th>가입일자</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </form>
+
+</body>
+</html>

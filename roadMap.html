@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Road map</title>
+  <link rel="stylesheet" href="css/mainHeader.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400;500;600;700;800&family=Black+Han+Sans&family=Hi+Melody&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Pen+Script&family=Poor+Story&family=Press+Start+2P&family=Slabo+27px&display=swap" rel="stylesheet">
+  <style>
+  .sec-container {
+    padding: 120px 0;
+  }
+  #title {
+    text-align: center;
+    width: 500px;
+    border: 3px solid #000;
+    margin: auto;
+    padding: 10px 0;
+    font: bolder 30px 'Slabo 27px', serif;;
+  }
+
+  body:hover #person {
+    animation: runner 5s ease 1 alternate forwards;
+  }
+
+  @keyframes runner {
+    10% {transform: translate(125px, 0);}
+    15% {transform: translate(125px, -70px);}
+    20% {transform: translate(185px, -70px);}
+    25% {transform: translate(185px, 200px);}
+    30% {transform: translate(240px, 200px);}
+    35% {transform: translate(240px, -290px);}
+    40% {transform: translate(300px, -290px);}
+    45% {transform: translate(300px, 105px);}
+    50% {transform: translate(350px, 105px);}
+    55% {transform: translate(350px, -190px);}
+    60% {transform: translate(410px, -190px);}
+    65% {transform: translate(410px, 210px);}
+    70% {transform: translate(460px, 210px);}
+    75% {transform: translate(460px, -110px);}
+    80% {transform: translate(515px, -110px);}
+    85% {transform: translate(515px, 70px);}
+    90% {transform: translate(570px, 70px);}
+    95% {transform: translate(570px, 0px);}
+    100% {transform: translate(800px, 0px);}
+  }
+  </style>
+</head>
+<body>
+  <div>
+    <header id="mainHeader">
+      <div class="mainHeader-container">
+        <span id ="home">
+          <a href="./index.html">
+            <img src="./image/logo.png" style="height: 63px; border: 1px solid plum;">
+          </a>
+        </span>
+        <div id ="menu">
+          <nav>
+            <ul class="navi">
+              <li><a href="./introduce.html">Introduce</a></li>
+              <li><a href="./ASMR.html">ASMR</a></li>
+              <li><a href="./roadMap.html">Road map</a></li>
+              <li><a href="./joinUs.html">Join us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="sec">
+      <div class="sec-container">
+        <div id="title">minky's developer roadmap</div>
+        <br><br>
+        <div style="position: absolute; left: 25%;"><img src="./image/road.png" alt=""></div>
+        <div id="person" style="position: absolute; margin-top: 420px; left: 25%;"><img style="width: 50px;" src="./image/runner.png" alt=""></div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
